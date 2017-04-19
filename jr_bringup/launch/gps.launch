@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="nmea_navsat_driver" type="nmea_serial_driver" name="gps_driver_node">
+    <param name="port" value="/dev/gps"/>
+    <param name="baud" value="9600"/>
+  </node>
+</launch>
