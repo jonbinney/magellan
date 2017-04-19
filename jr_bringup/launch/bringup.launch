@@ -4,4 +4,6 @@
   <include file="$(find jr_bringup)/launch/gps.launch"/>
 
   <node pkg="jr_bringup" type="deadman" name="deadman"/>
+
+  <node pkg="jr_bringup" type="mcp" name="mcp"/>
 </launch>
