@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find jr_bringup)/launch/motors.launch"/>
+  <include file="$(find jr_bringup)/launch/camera.launch"/>
+  <include file="$(find jr_bringup)/launch/gps.launch"/>
+
+  <node pkg="jr_bringup" type="deadman" name="deadman"/>
+</launch>
