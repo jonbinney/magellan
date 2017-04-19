@@ -1,0 +1,14 @@
+<launch>
+  <arg name="roboteq_port" default="/dev/ttyACM0"/>
+
+  <node pkg="roboteq_python" type="roboteq_driver_node" name="roboteq_driver">
+    <param name="port" value="$(arg roboteq_port)" />
+    <rosparam
+        command="load"
+        file="$(find jr_bringup)/param/motors.yml"/>
+  </node>
+
+  <node pkg="jr_bringup" type="base_controller" name="base_controller"/>
+
+</launch>
+

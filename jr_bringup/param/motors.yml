@@ -1,0 +1,32 @@
+# Speeds are in rad/s, acceleration/deceleration are in rad/s^2
+motors:
+    - name: left_motor
+      motor_reversed: false
+      max_speed: 60.0
+      max_acceleration: 240.0
+      max_deceleration: 1200.0
+      max_duty_cycle: 1.0
+      max_current: 2.0
+      encoder_pulses_per_revolution: 114
+      k_p: 10.0
+      k_i: 20.0
+      k_d: 0.0
+
+    - name: right_motor
+      motor_reversed: false
+      max_speed: 60.0
+      max_acceleration: 240.0
+      max_deceleration: 1200.0
+      max_duty_cycle: 1.0
+      max_current: 2.0
+      encoder_pulses_per_revolution: 114
+      k_p: 10.0
+      k_i: 10.0
+      k_d: 0.0
+
+digital_inputs:
+    - name: bumper
+      input_channel: 3
+      action: 4 # Forward direction limit switch
+      motor_channels: [1, 2]
+
