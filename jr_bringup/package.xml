@@ -12,5 +12,6 @@
 
   <run_depend>teleop_twist_keyboard</run_depend>
   <run_depend>nmea_navsat_driver</run_depend>
+  <run_depend>python_serial</run_depend>
 
 </package>
